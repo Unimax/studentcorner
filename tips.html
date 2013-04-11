@@ -1,0 +1,316 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Untitled Document</title>
+<style type="text/css">
+</style>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/reset.css">   
+<!-- mobile -->
+<link href="CSS/mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-width:800px)" />
+<style type="text/css">
+#banner {
+	position: absolute;
+	left: 10%;
+	top: 110px;
+	width: 950px;
+	height: 300px;
+	z-index: 6;
+}
+h3 {
+	color: #C06;
+	font-size: x-large;
+}
+h4 {
+	font-size: xx-large;
+	color: #3FC;
+}
+#apDiv2 {
+	position: absolute;
+	left: 0;
+	top: 61px;
+	width: 70%;
+	height: 40px;
+	z-index: 7;
+	background-color: rgba(0,0,0,.8);
+}
+tips {
+	position: absolute;
+	top: 127px;
+	width: 90%;
+	height: auto;
+	z-index: 3;
+	background-color: rgba(0,0,153,0.8);
+	color: #FFF;
+	border-radius: 0px 30px 0px 30px;
+	float: right;
+	left: 69px;
+}
+</style>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#apDiv3 {
+	position: absolute;
+	left: 67px;
+	top: 975px;
+	width: 90%;
+	height: auto;
+	z-index: 8;
+	background-color: rgba(0,153,204,0.7);
+}
+h2 {
+	font-size: large;
+	color: #990033;
+}
+body,td,th {
+	color: #9F9;
+}
+</style>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="logo"><a href="index.html"><img src="images/logo.png" width="430" height="50" alt="logo student corner" /></a></div>
+<tips>
+  <h4><strong>How to Study and Prepare  for Finals?</strong><br />
+  </h4>
+  
+  <p>  Everyone has their own unique way of studying and preparing for  finals in college, but some methods are much more efficient than others.  Unfortunately, an inefficient method of preparing for finals may be what keeps  you from succeeding. Your finals are too important to mess up. Here are a few  ways to stay on task and prepare yourself properly for the biggest exams of the  year.&nbsp; </p>
+  
+  <h3><strong>Prioritize </strong></h3>
+  
+  <p>Study and complete the projects that will be worth more of your  grade first. Make an ordered list of things to study and projects to complete  based on time and importance. Without having some semblance of an agenda  planned, it will become very easy for you to mismanage all of the study time  that you have available to you. Know where you currently stand grade wise in  your classes, so you know how well you will have to do on the final to get the  grade you desire. </p>
+  
+  <h3>Don't Fall behind </h3>
+  
+  <p>If you are behind in required class readings, you will have a lot  of reading to do come finals. Make sure you learn the material the first time  it's taught, so you don't have to go back and review it. Sometimes, if you pay  good attention in class, you can forgo some of the required reading. </p>
+  
+  <h3>Study Environment </h3>
+  
+  <p>You can accomplish much more quality study time in an&nbsp;<a href="http://www.campusgrotto.com/best-places-to-study.html">academic like atmosphere</a>than studying at home. Cut  out all distractions while brainstorming to help maintain your train of  thought. Eliminating noisy distractions and working during the day when you are  more alert are also great ways to improve efficiency when studying. </p>
+  
+  <h3>Study Time </h3>
+  
+  <p>Be prepared for some seriously intensive study and plan for it  accordingly. Study when it best suits you. Some people have more energy in the  daytime, therefore study harder then, while others have higher efficiency  during the late hours of the night. Find what works best for you and dedicate  your more difficult tasks to these study times. </p>
+  
+  <h3>Office Hours </h3>
+  
+  <p>Show up at your professors office during office hours. Many  professors office hours go unused by students, which is sad because they are  such a great resource of information (they know what will be on the test). The  professor will see your dedication and in doing so, it may even bump you up a  grade. </p>
+</tips>
+  
+    <?php
+					if (!isset($_SESSION['username'])) {
+	?>
+<div id="apDiv2">
+  <ul id="MenuBar1" class="MenuBarHorizontal">
+<li><a class="MenuBarItemSubmenu" href="Posts.php?Submit=Submit">Notice Board</a>
+      <ul>
+        <li><a href="Posts.php?fcat=News&amp;Year=5&amp;Submit=Submit">Recent News</a></li>
+        <li><a href="#">Placement</a></li>
+</ul>
+    </li>
+    <li><a href="Posts.php?Submit=Submit" class="MenuBarItemSubmenu">Student Post</a>
+      <ul>
+        <li><a href="Posts.php?Year=1&amp;Submit=Submit">1st Year</a></li>
+        <li><a href="Posts.php?Year=2&amp;Submit=Submit" class="MenuBarItemSubmenu">2nd Year</a>
+          <ul>
+            <li><a href="Posts.php?fcat=EE&amp;Year=2&amp;Submit=Submit">EE</a></li>
+            <li><a href="Posts.php?fcat=ECE&amp;Year=2&amp;Submit=Submit">ECE</a></li>
+            <li><a href="Posts.php?fcat=ME&amp;Year=2&amp;Submit=Submit">ME</a></li>
+            <li><a href="Posts.php?fcat=MME&amp;Year=2&amp;Submit=Submit">MME</a></li>
+            <li><a href="Posts.php?fcat=BT&amp;Year=2&amp;Submit=Submit">BT</a></li>
+            <li><a href="Posts.php?fcat=IT&amp;Year=2&amp;Submit=Submit">IT</a></li>
+            <li><a href="Posts.php?fcat=CSE&amp;Year=2&amp;Submit=Submit">CSE</a></li>
+            <li><a href="Posts.php?fcat=CHE&amp;Year=2&amp;Submit=Submit">CHE</a></li>
+            <li><a href="Posts.php?fcat=CIV&amp;Year=2&amp;Submit=Submit">CIV</a></li>
+          </ul>
+        </li>
+        <li><a href="Posts.php?Year=3&amp;Submit=Submit" class="MenuBarItemSubmenu">3rd Year</a>
+          <ul>
+            <li><a href="Posts.php?fcat=EE&amp;Year=3&amp;Submit=Submit">EE</a></li>
+            <li><a href="Posts.php?fcat=ECE&amp;Year=3&amp;Submit=Submit">ECE</a></li>
+            <li><a href="Posts.php?fcat=ME&amp;Year=3&amp;Submit=Submit">ME</a></li>
+            <li><a href="Posts.php?fcat=MME&amp;Year=3&amp;Submit=Submit">MME</a></li>
+            <li><a href="Posts.php?fcat=BT&amp;Year=3&amp;Submit=Submit">BT</a></li>
+            <li><a href="Posts.php?fcat=IT&amp;Year=3&amp;Submit=Submit">IT</a></li>
+            <li><a href="Posts.php?fcat=CSE&amp;Year=3&amp;Submit=Submit">CSE</a></li>
+            <li><a href="Posts.php?fcat=CHE&amp;Year=3&amp;Submit=Submit">CHE</a></li>
+            <li><a href="Posts.php?fcat=CIV&amp;Year=3&amp;Submit=Submit">CIV</a></li>
+          </ul>
+        </li>
+        <li><a href="Posts.php?Year=4&amp;Submit=Submit" class="MenuBarItemSubmenu">4th Year</a>
+          <ul>
+            <li><a href="Posts.php?fcat=EE&amp;Year=4&amp;Submit=Submit">EE</a></li>
+            <li><a href="Posts.php?fcat=ECE&amp;Year=4&amp;Submit=Submit">ECE</a></li>
+            <li><a href="Posts.php?fcat=ME&amp;Year=4&amp;Submit=Submit">ME</a></li>
+            <li><a href="Posts.php?fcat=MME&amp;Year=4&amp;Submit=Submit">MME</a></li>
+            <li><a href="Posts.php?fcat=BT&amp;Year=4&amp;Submit=Submit">BT</a></li>
+            <li><a href="Posts.php?fcat=IT&amp;Year=4&amp;Submit=Submit">IT</a></li>
+            <li><a href="Posts.php?fcat=CSE&amp;Year=4&amp;Submit=Submit">CSE</a></li>
+            <li><a href="Posts.php?fcat=CHE&amp;Year=4&amp;Submit=Submit">CHE</a></li>
+            <li><a href="Posts.php?fcat=CIV&amp;Year=4&amp;Submit=Submit">CIV</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a class="MenuBarItemSubmenu" href="#">Co-curricular</a>
+      <ul>
+        <li><a class="MenuBarItemSubmenu" href="#">Clubs</a>
+          <ul>
+            <li><a href="pages/arhn.html">AAROHAN</a></li>
+            <li><a href="nss.html">NSS</a></li>
+            <li><a href="pages/mntc.html">MNTC</a></li>
+            <li><a href="pages/GLUG.html">GLUG</a></li>
+            <li><a href="pages/lc.html">LC</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="MenuBarItemSubmenu">Sports</a>
+          <ul>
+            <li><a href="pages/foot.html">football</a></li>
+            <li><a href="pages/OTHERS.html">others</a></li>
+          </ul>
+        </li>
+        <li><a href="pages/OTHERS.html">Others</a></li>
+      </ul>
+    </li>
+    <li><a href="showfile.php">Study Matrial</a>    </li>
+    <li><a href="#" class="MenuBarItemSubmenu">Misc</a>
+      <ul>
+        <li><a href="complaint.html">Complaint Box</a></li>
+        <li><a href="tips.html">Tips &amp; Pics</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </li>
+   </li>
+  </ul>
+</div>
+<div id="apDiv3">
+  <h4>How much should college students sleep?</h4>
+  <p><a href="http://www.campusgrotto.com/college-advice-100-tips-for-survival.html">College  isn&rsquo;t easy</a>. One of the many challenges in the path toward  a degree is the struggle to wake up and go to that early morning class. Many  mornings are spent pondering hitting that snooze button again and deciding if  you can afford to skip that 8am class. It&rsquo;s a dilemma that can be very tempting  as the reality of a short night hits you.</p>
+  <p><br />
+    Lack of sleep is one of the&nbsp;<a href="http://www.campusgrotto.com/college-complaints.html">biggest  complaints by college students</a>. It makes  us fall asleep in class, affects class/test performance, and makes us rely on  coffee just to get us through the day. It&rsquo;s enough to make one question the  amount of sleep they are getting.</p>
+  <p>&nbsp;</p>
+  <h3>How many hours should students sleep?</h3>
+  <p>&nbsp;</p>
+  <p>It&rsquo;s been long standing belief that we should all get 7-8 hours of  sleep, but in reality it all comes down to the individual. There are some who  can function just fine on 5-6 hours of sleep, while others require a full 8  hours of sleep. The trick is to find the proper balance by not under or  oversleeping.<br />
+    According to&nbsp;<a href="http://www.stanford.edu/~dement/sleepless.html">Stanford  University</a>, &quot;the average sleep requirement for  college students is well over eight hours, and the majority of students would  fall within the range of this value plus or minus one hour.&quot;</p>
+  <p><br />
+    Unfortunately&nbsp;<a href="http://www.campusgrotto.com/the-all-nighter.html">not  everyone</a>&nbsp;has  that much time to dedicate to sleep on a consistent nightly basis.</p>
+  <p>&nbsp;</p>
+  <p><img src="images/joke.jpg" alt="joke" width="625" height="329" /></p>
+  <p>&nbsp;</p>
+  <p><h3><strong>Sleeps impact on Academic  Performance</strong></h3> 
+  <p><br />
+    Researchers at UC Berkeley&nbsp;<a href="http://newscenter.berkeley.edu/2011/03/08/sleep-brainwaves/">recently  found</a>&nbsp;when  we sleep we boost our ability to learn. This happens in the part of the sleep  that occurs just before we reach the deepest<a href="http://en.wikipedia.org/wiki/Non-rapid_eye_movement_sleep">NREM  sleep</a>&nbsp;phase  and the dream state known as&nbsp;<a href="http://en.wikipedia.org/wiki/REM_sleep">REM  sleep</a>.<br />
+  &ldquo;A lot of that spindle-rich sleep is occurring the second half of  the night, so if you sleep six hours or less, you are shortchanging yourself.  You will have fewer spindles, and you might not be able to learn as much,&rdquo;  claimed Bryce Mander, a post-doctoral fellow in psychology at UC Berkeley who  led the study.<br />
+    Researchers said evidence that brain waves during the latter part  of the sleep period promote our capacity to store fact-based memories&nbsp;<strong>raises the question of whether  taking early morning classes is optimal for learning</strong>. &ldquo;This discovery  indicates that we not only need sleep after learning to consolidate what we&rsquo;ve  memorized, but that we also need it before learning, so that we can recharge  and soak up new information the next day.&rdquo;<br />
+  <strong>Sleep not only refreshes the mind, but can make you smarter</strong>.  The more hours we spend awake, the more sluggish our minds become. Therefore,&nbsp;<a href="http://www.campusgrotto.com/the-all-nighter.html"><strong>pulling  an all-nighter</strong></a><strong>, a common practice at college  during finals week, decreases the ability to learn new facts</strong>&nbsp;by nearly  40 percent, due to a shutdown of brain regions during sleep deprivation.</p>
+  <p><br />
+    Knowing about sleeps impact on academic performance motivated  Stanford to create a<a href="http://www.end-your-sleep-deprivation.com/sleep-and-dreams.html">sleep  and dreams class</a>&nbsp;and  led colleges like Duke to&nbsp;<a href="http://www.cbsnews.com/stories/2004/04/19/health/main612476.shtml">eliminate  8am classes</a>&nbsp;back  in 2004. For those not lucky enough to get to sleep in, there are a few tricks  you can do to help you&nbsp;<a href="http://www.campusgrotto.com/how-to-become-an-early-riser.html">become  an early riser</a>.</p>
+  </p>
+  <p>&nbsp;</p>
+  <h4>What about naps?</h4>
+  <p>&nbsp;</p>
+  <p>Naps are great. While over napping can screw up your sleep  schedule,&nbsp;<a href="http://newscenter.berkeley.edu/2010/02/22/naps_boost_learning_capacity/"><strong>power  naps actually work</strong></a>. Naps under one hour long nap  can dramatically boost and restore brain power. Anything longer can make you  feel more tired when you wake up. Even&nbsp;<strong>a  20 minute nap will greatly benefit anyone who feels they need a recharge as it  will improve overall alertness, boost mood and increase productivity</strong>. Just  try not to nap too late in the day. If you nap early enough in the day, it  shouldn&rsquo;t affect your normal sleep schedule. Additionally, taking a mid-day nap  when you&rsquo;re feeling fatigued will be better for you than any form of caffeine  you plan to intake.</p>
+  <p>&nbsp;</p>
+  <h2>Oversleeping</h2>
+  <p>&nbsp;</p>
+  <p>Over sleeping causes people to suffer from sleepiness throughout  the day. Many people with&nbsp;<a href="http://www.webmd.com/sleep-disorders/hypersomnia">hypersomnia</a>&nbsp;experience  symptoms of anxiety, low energy, and memory problems as a result of their  almost constant need for sleep. Oversleeping has also been linked to a&nbsp;<a href="http://www.webmd.com/sleep-disorders/guide/physical-side-effects-oversleeping">host of  medical problems</a>, including diabetes, heart disease,  and increased risk of death.<br />
+    The amount of sleep you need varies significantly over the course  of your life. It depends on your age and activity level as well as your health  and lifestyle habits. No one really needs to be sleeping more than 9 hours a  night. It is important to find the proper balance of sleep because&nbsp;<a href="http://www.time.com/time/health/article/0,8599,1812420,00.html#ixzz1HY2oYokt">studies  show</a>&nbsp;that  people who sleep 8 hours or more, or less than 6.5 hours, don't live as long as  those who get between 6.5 and 7.5 a night.</p>
+  <p><br />
+  <h2><strong>Alcohol and Sleep</strong></h2> </p>
+  <p><br />
+    Consumption of alcohol&nbsp;<a href="http://www.timesonline.co.uk/tol/life_and_style/health/features/article7015007.ece">messes  with</a>&nbsp;the  various sleep states your body goes through at night. While it might help you  fall asleep faster, it typically results in a poorer quality of sleep and can  cause multiple awakenings in the middle of the night. This poorer quality of  sleep leads to a lengthened sleeping time and when sleeping, alcohol in your  system disrupts what researchers call &ldquo;sleep architecture&rdquo; — the pattern of  sleep and brain waves that leaves you feeling refreshed in the morning.</p>
+  <p><br />
+     <h2><strong>Environment</strong></h2> </p>
+  <p><br />
+    Sleeping arrangements in college don&rsquo;t really make the most  effective sleeping environment. Things can get loud. Trying to get to sleep  while all this activity is going on around you can be difficult, but there are  things you can do to help block out these distractions (like&nbsp;<a href="http://simplynoise.com/">white noise</a>).</p>
+  <p><br />
+     <h2><strong>Nighttime Computer Use</strong></h2> </p>
+  <p><br />
+    For optimal sleep results, all digital equipment (computers, TV,  etc.) should be turned off one hour before sleep time.&nbsp;<a href="http://www.webmd.com/sleep-disorders/news/20030620/nighttime-computer-users-may-lose-sleep">Studies  have shown</a>&nbsp;staring  at a bright computer screen before bedtime can make falling asleep more  difficult</p>
+</div>
+<div id="loginwrapper"></div>
+           <div id="login-button"><img src="images/login-button-blue-hi.png" width="260" height="100" alt="login" /></div>
+              <div id="login-dialog">
+                  
+				    <form method="post" action="./include/dologin.php" id="loginForm">
+				        <div><input name="email" id="lemail" type="text" placeholder="Email"/></div>
+				        <div><input name="password" id="lpassword" type="password" placeholder="Password"/></div>
+				        <div><input name="signin" type="submit" value="Log In"/></div>
+					    <div><a href="#" style="text-decoration: none; font-size: 12pt; color: blue;">Forgot Password</a></div> 
+				    </form>
+</div>
+                
+            <div id="Registor-button"><img src="images/register_now_button.png" width="120" height="100" alt="Registor" /></div>   
+                <div id="register-dialog">
+                  
+                    	<form method="post" action="./include/dologin.php" id="registerForm">
+                        	<div><input name="username" id="username" type="text" placeholder="Username"/></div>
+                        	<div><input name="email" id="email" type="text" placeholder="Email"/></div>
+                            <div><input name="password" id="password" type="password" placeholder="Password"/></div>
+                       		<div><input name="confirmpassword" id="confirmpassword" type="password" placeholder="Confirm Password"/></div>
+                        	
+                            <div> <label>Department
+                                    <select name="Department" id="Department">
+                              		   	    <option value="CHE">CHE</option>
+      									    <option value="MME">MME</option>
+    									    <option value="CSE">CSE</option>
+     									    <option value="ME">ME</option>
+   									        <option value="IT">IT</option>
+      									    <option value="ECE">ECE</option>
+      									    <option value="EE">EE</option>
+     								        <option value="CIV">CIV</option>
+    									    <option value="BT">BT</option>
+                              </select></label></div> 
+                            <div> <label>Year Of Joining
+                                    <select name="Year_of_Joining" id="yoj">
+                              		   	    <option value="2008">2008</option>
+      									    <option value="2009">2009</option>
+    									    <option value="2010">2010</option>
+     									    <option value="2011">2011</option>
+   									        <option value="2012">2012</option>
+      									    <option value="2013">2013</option>
+      									    <option value="2014">2014</option>
+     								        <option value="2015">2015</option>
+    									    
+                              </select></label></div> 
+                            <div><input name="register" type="submit" value="Register"/></div>
+		          </form>
+</div>
+                
+  
+                
+<?php
+					} else { 
+				?>
+                
+                
+                
+                
+                <?php
+					}
+				?>
+    	 
+<script src="scripts/jquery-1.8.3.min.js"></script>
+<script src="scripts/jquery-ui-1.8.23.custom.min.js"></script>
+<script src="scripts/script.js"></script>
+<script src="scripts/jquery.mousewheel.min.js"></script>
+<script src="scripts/jquery.mCustomScrollbar.js"></script>
+    
+<script type="text/javascript">
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>	
+</body>
+</html>

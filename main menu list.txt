@@ -1,0 +1,88 @@
+<li><a class="MenuBarItemSubmenu" href="#">Notice Board</a>
+      <ul>
+        <li><a href="#">Recent News</a></li>
+        <li><a href="#">Placement</a></li>
+        <li><a href="#">Scolarship</a></li>
+        <li><a href="#">Result</a></li>
+      </ul>
+    </li>
+    <li><a href="#" class="MenuBarItemSubmenu">Student Post</a>
+      <ul>
+        <li><a href="#">1st Year</a></li>
+        <li><a href="#" class="MenuBarItemSubmenu">2nd Year</a>
+          <ul>
+            <li><a href="#">EE</a></li>
+            <li><a href="#">ECE</a></li>
+            <li><a href="#">ME</a></li>
+            <li><a href="#">MME</a></li>
+            <li><a href="#">BT</a></li>
+            <li><a href="#">IT</a></li>
+            <li><a href="#">CSE</a></li>
+            <li><a href="#">CHE</a></li>
+            <li><a href="#">CIV</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="MenuBarItemSubmenu">3rd Year</a>
+          <ul>
+            <li><a href="#">EE</a></li>
+            <li><a href="#">ECE</a></li>
+            <li><a href="#">ME</a></li>
+            <li><a href="#">MME</a></li>
+            <li><a href="#">BT</a></li>
+            <li><a href="#">IT</a></li>
+            <li><a href="#">CSE</a></li>
+            <li><a href="#">CHE</a></li>
+            <li><a href="#">CIV</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="MenuBarItemSubmenu">4th Year</a>
+          <ul>
+            <li><a href="#">EE</a></li>
+            <li><a href="#">ECE</a></li>
+            <li><a href="#">ME</a></li>
+            <li><a href="#">MME</a></li>
+            <li><a href="#">BT</a></li>
+            <li><a href="#">IT</a></li>
+            <li><a href="#">CSE</a></li>
+            <li><a href="#">CHE</a></li>
+            <li><a href="#">CIV</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a class="MenuBarItemSubmenu" href="#">Co-curricular</a>
+      <ul>
+        <li><a class="MenuBarItemSubmenu" href="#">Clubs</a>
+          <ul>
+            <li><a href="#">MNTC</a></li>
+            <li><a href="#">CCA</a></li>
+            <li><a href="#">Gymkhane</a></li>
+            <li><a href="#">DC</a></li>
+            <li><a href="#">Prakriti</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="MenuBarItemSubmenu">Sports</a>
+          <ul>
+            <li><a href="#">football</a></li>
+            <li><a href="#">others</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Others</a></li>
+      </ul>
+    </li>
+    <li><a href="#" class="MenuBarItemSubmenu">Study Matrial</a>
+      <ul>
+        <li><a href="#">e-library</a></li>
+        <li><a href="#">Question Bank</a></li>
+        <li><a href="#">Notes &amp; syllabus</a></li>
+      </ul>
+    </li>
+    <li><a href="#" class="MenuBarItemSubmenu">Misc</a>
+      <ul>
+        <li><a href="#">Complaint Box</a></li>
+        <li><a href="#">Rules &amp; Reg.</a></li>
+        <li><a href="#">Tips &amp; Pics</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Register</a></li>

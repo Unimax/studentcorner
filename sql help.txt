@@ -1,0 +1,8 @@
+You may need to set up a root account for your MySQL database:
+
+In the terminal type:
+
+mysqladmin -u root password 'root password goes here'
+And then to invoke the MySQL client:
+
+mysql -h localhost -u root -p

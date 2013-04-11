@@ -1,0 +1,476 @@
+@charset "utf-8";
+@font-face {
+	font-family: 'sks1';
+	src: url('fonts/BlackOpsOne-Regular.ttf') format('truetype');
+}
+body {
+	background-image: url(../images/baground.jpg);
+	background-color: #099;
+	background-attachment: fixed;
+	background-size: cover;
+}
+body,td,th {
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+#apDiv1 {
+	position: absolute;
+	left: -18px;
+	top: 67px;
+	width: 1200px;
+	height: 46px;
+	z-index: 1;
+	background-color: #000099;
+}
+nav {
+	position: absolute;
+	z-index: 1;
+	background-color: rgba(0,0,204,0.5);
+	height: 36px;
+	width: 100%;
+	top: 110px;
+	left: 14px;
+	text-align: right;
+}
+#logo {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 470px;
+	height: 50px;
+	z-index: 2;
+}
+section {
+	position: absolute;
+	top: 480px;
+	width: 90%;
+	height: auto;
+	z-index: 3;
+	background-color: rgba(0,0,153,0.8);
+	color: #FFF;
+	border-radius: 0px 30px 0px 30px;
+	float: right;
+	left: 71px;
+}
+#MenuBar1 {
+position:relative;
+z-index:15;
+}
+#iefix {
+position:relative;
+z-index:16;
+}
+#Registor-button {
+	position: absolute;
+	left: 70%;
+	top: 0%;
+	width: 120px;
+	height: 100px;
+	z-index: 4;
+	opacity: 0.7;
+}
+#Registor-button:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+#login-button {
+	position: absolute;
+	left: 80%;
+	top: 0%;
+	width: 260px;
+	height: 100px;
+	z-index: 5;
+	opacity: 0.7;
+}
+
+#login-button:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+#logout-button {
+	
+	opacity: 0.7;
+	}
+
+#logout-button:hover {
+	opacity: 1;
+}
+#container{
+	left: 927px;
+	top: 0%;
+	width: 460px;
+	height: 100px;
+}
+#loginwrapper {
+	opacity: 0;
+	display: none;
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	background-color: white;
+}
+#register-dialog {
+	display: none;
+	width: 300px;
+	top: -600px;
+	left: 70%;
+	position: fixed;
+	z-index: 10;
+	padding: 20px 1px 20px 20px;
+}
+
+#login-dialog {
+	display: none;
+	width: 260px;
+	top: -300px;
+	left: 80%;
+	position: fixed;
+	z-index: 10;
+	padding: 10px 10px 10px 10px;
+}
+
+#content {
+	width: 100%;
+	height: 100%;
+	padding-right: 20px;
+}
+
+#content-body-wrapper {
+	height: 350px;
+	overflow-y: auto;
+}
+
+#nav-menu {
+	width: 375px;
+	margin-left: -105%;
+	right: 375px;
+	height: 400px;
+}
+
+* html #nav-menu {					/* This is a hack for IE6, just remember that the offset is the
+															 size of the right-notification-widget */
+	left: 350px;
+}
+
+.nav-menu-list {
+	position: relative;
+	top: 50%;
+	left: 50%;
+}
+
+.nav-menu-list li{
+	margin-left: -63px;				/* Magnitude should be equal to radius of node */
+	margin-top: -63px;
+	cursor: pointer;
+}
+
+.map {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float: left;
+}
+
+#register-login-text-wrapper {
+	position: absolute;
+	width: 700px;
+	top: 30%;
+	left: 50%;
+	margin-left: -350px;
+}
+
+#forgot-form {
+	position: absolute;
+	width: 700px;
+	top: 30%;
+	left: 50%;
+	text-align: center;
+	margin-left: -350px;
+}
+
+#forgot-form form {
+	position: relative;
+	text-align: center;
+}
+
+#forgot-submit {
+	width: 300px !important;
+}
+
+#forgot-prompt {
+	padding-bottom: 20px;
+}
+
+#forgot-email {
+	margin-left: 12px;
+	margin-right: 12px;
+	width: 288px !important;
+}
+
+@font-face {
+  font-family: 'AudiowideRegular';
+  src: url('../fonts/Audiowide-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IcelandRegular';
+  src: url('../fonts/Iceland-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NunitoRegular';
+  src: url('../fonts/Nunito-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KeaniaOne-Regular';
+  src: url('../fonts/KeaniaOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monda-Regular';
+  src: url('../fonts/Monda-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monda-Bold';
+  src: url('../fonts/Monda-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PaytoneOne';
+  src: url('../fonts/PaytoneOne.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UnicaOne-Regular';
+  src: url('../fonts/UnicaOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.nav-menu-list li {
+	border: none;
+	font: 16pt 'Monda-Bold';
+}
+
+.nav-menu-list li:hover {
+	color: white;
+	background: #003010;
+}
+
+.timestamp {
+	font-size: 7.5pt;
+	font-style: italic;
+}
+
+#content h1
+{
+	color: #004020;
+	font: 32px 'PaytoneOne';
+}
+
+#content-body,
+#forgot-prompt
+{
+	color: #004020;
+	margin-left: 5px;
+	margin-right: 20px;
+	font: 14pt 'Monda-Regular';
+	transition: opacity 500ms;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+}
+
+
+#loginwrapper {
+	opacity: 0;
+	display: none;
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	background-color: white;
+}
+
+#logout-button {
+	font: 12pt 'Monda-Regular';
+}
+
+#logout-button a {
+	text-decoration: none;
+	color: white;
+}
+
+#welcome-bar {
+	color: white;
+	font: 12pt 'Monda-Regular';
+	line-height: 25px;
+}
+
+#login-button {
+	font: 12pt 'Monda-Regular';
+}
+
+#register-button {
+	font: 12pt 'Monda-Regular';
+	left: 781px;
+	top: -9px;
+}
+
+.red-background {
+	background-color: red !important; 	
+}
+
+#login-dialog,
+#register-dialog {
+	background: white;
+	border-radius: 10px;
+	color: black;
+	opacity: 1;
+	box-shadow: 0px 0px 10px #222222;
+	transition: top 300ms;
+	-webkit-transition: top 300ms;
+	-moz-transition: top 300ms;
+	-o-transition: top 300ms;
+	font: 14pt 'Monda-Regular';
+}
+
+
+#login-dialog input[type="text"],
+#login-dialog input[type="password"],
+#register-dialog input[type="text"],
+#register-dialog input[type="password"],
+#forgot-email
+{
+  position: relative;
+  width: 80%;
+  height: auto;
+  font: 12pt 'Monda-Regular';
+
+  padding: 4px 6px 4px 6px;
+  margin-bottom: 10px;
+  line-height: 20px;
+  color: #555555;
+  vertical-align: middle;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+#login-dialog input[type="text"]:focus,
+#login-dialog input[type="password"]:focus,
+#register-dialog input[type="text"]:focus,
+#register-dialog input[type="password"]:focus,
+#forgot-email:focus
+{
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+#login-dialog input[type="submit"],
+#register-dialog input[type="submit"],
+#forgot-submit
+{
+  display: inline-block;
+  *display: inline;
+  width: 85%;
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  *margin-left: .3em;
+  font: 12pt 'Monda-Regular';
+  line-height: 20px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  *background-color: #e6e6e6;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #bbbbbb;
+  *border: 0;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #a2a2a2;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+#login-dialog input[type="submit"]:hover,
+#register-dialog input[type="submit"]:hover,
+#forgot-submit:hover
+{
+ color: #333333;
+  text-decoration: none;
+  background-position: 0 -15px;
+  background-color: #e6e6e6;
+  -webkit-transition: background-position 0.1s linear;
+     -moz-transition: background-position 0.1s linear;
+       -o-transition: background-position 0.1s linear;
+          transition: background-position 0.1s linear;
+}
+
+.validationerror {
+	background-color: #FFDDD0 !important;
+}
+
+#register-login-text {
+	text-align: center;
+	color: #004020;
+	font: 14pt 'Monda-Regular';
+}
+#admin {
+	position: absolute;
+	left: 688px;
+	top: 0%;
+	width: 140px;
+	height: 21px;
+	z-index: 8;
+	font-family: "sks1";
+	background-color: rgba(154,158,78,1);
+	border-radius: 15px;
+	text-decoration: underline;
+}

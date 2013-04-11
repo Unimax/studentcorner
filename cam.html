@@ -1,0 +1,74 @@
+<html>
+<head><title>Camera Access</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body {
+	background-image: url(images/baground.jpg);
+}
+#apDiv1 {
+	position: absolute;
+	left: 25%;
+	top: 25%;
+	width: 50%;
+	height: 500px;
+	z-index: 1;
+}
+</style>
+</head>
+<body>
+<div id="apDiv1">
+<video id="basic-stream" class="videostream" autoplay></video>
+<p><button id="capture-button">Capture video</button> <button id="stop-button">Stop</button></p>
+
+<script>
+function onFailSoHard(e)
+{
+	if(e.code==1)
+	{
+	   alert('User denied access to their camera');
+	}
+	else
+	{
+	   alert('getUserMedia() not supported in your browser.');
+	}
+	}
+(function()
+{
+	var video=document.querySelector('#basic-stream');
+	var button=document.querySelector('#capture-button');
+	var localMediaStream=null;button.addEventListener('click',function(e)
+	{
+	if(navigator.getUserMedia)
+	{
+		navigator.getUserMedia('video',function(stream)
+		{
+			video.src=stream;video.controls=true;localMediaStream=stream;
+		},onFailSoHard);
+	}
+	else if(navigator.webkitGetUserMedia)
+	{
+		navigator.webkitGetUserMedia({video:true},function(stream)
+		{
+			video.src=window.webkitURL.createObjectURL(stream);
+			video.controls=true;
+			localMediaStream=stream;
+		},onFailSoHard);
+	}
+	else
+	{
+		onFailSoHard({target:video});
+	}
+	},false);
+	document.querySelector('#stop-button').addEventListener('click',function(e)
+	{
+	    video.pause();
+		localMediaStream.stop();
+	},false);
+})();
+</script>
+
+</div>
+<div id="logo"><a href="index.php"><img src="images/logo.png" width="430" height="50" alt="logo student corner" /></a></div>
+
+</body>
+</html>

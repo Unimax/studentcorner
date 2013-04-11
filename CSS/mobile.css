@@ -1,0 +1,17 @@
+@charset "utf-8";
+body {
+	background-size: auto;
+}
+#apDiv4 {
+	position: relative;
+	left: 5%;
+	top: 114px;
+	width: 90%;
+	height: 391px;
+	z-index: 3;
+	-webkit-transition: all;
+	-moz-transition: all;
+	-ms-transition: all;
+	-o-transition: all;
+	transition: all;
+}

@@ -1,0 +1,198 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Admin Post and upload</title>
+<style type="text/css">
+</style>
+<link rel="stylesheet" href="../css/reset.css">   
+<!-- mobile -->
+<link href="../CSS/mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-width:800px)" />
+<style type="text/css">
+</style>
+<style type="text/css">
+</style>
+<link href="style1.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#apDiv2 {
+	position: absolute;
+	left: 95px;
+	top: 236px;
+	width: 741px;
+	height: 368px;
+	z-index: 11;
+}
+#apDiv3 {
+	position: absolute;
+	left: 92px;
+	top: 650px;
+	width: 244px;
+	height: 23px;
+	z-index: 12;
+}
+#upload {
+	position: absolute;
+	left: 91px;
+	top: 783px;
+	width: 471px;
+	height: 96px;
+	z-index: 13;
+}
+#apDiv1 {
+	position: absolute;
+	left: 93px;
+	top: 701px;
+	width: 255px;
+	height: 40px;
+	z-index: 14;
+	font-family: "sks1";
+	font-size: 36px;
+	background-color: rgba(154,158,78,1);
+	border-radius: 15px;
+	text-decoration: underline;
+}
+#apDiv5 {
+	position: absolute;
+	left: 125px;
+	top: 959px;
+	width: 423px;
+	height: 1759px;
+	z-index: 15;
+}
+#apDiv4 {
+	position: absolute;
+	left: 572px;
+	top: 194px;
+	width: 225px;
+	height: 25px;
+	z-index: 15;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	background-color: rgba(37,124,167,1);
+	border-bottom-style: groove;
+	border-radius: 15px;
+
+}
+#apDiv6 {
+	position: absolute;
+	left: 93px;
+	top: 619px;
+	width: 308px;
+	height: 24px;
+	z-index: 16;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	background-color: rgba(37,124,167,1);
+	border-bottom-style: groove;
+	border-radius: 15px;
+}
+</style>
+</head>
+
+<body link="#CC6666">
+
+<div id="admin2"><img src="../images/administrator.jpg" width="200" height="252" alt="admin" /></div>
+<div id="Create">Create New Post:</div>
+<div id="scat">Select category:	 </div>
+
+<div id="cat">
+  <form id="form1" name="form1" method="post" action="./donepost.php">
+    <label>Category
+    <select name="fcat" id="fcat">
+      <option value="CSE">CSE</option>
+      <option value="IT">IT</option>
+      <option value="ECE">ECE</option>
+      <option value="EE">EE</option>
+      <option value="CIV">CIV</option>
+      <option value="CHE">CHE</option>
+      <option value="BT">BT</option>
+      <option value="MME">MME</option>
+      <option value="ME">ME</option>
+      <option value="NOTES">NOTES</option>
+      <option value="Others">OTHER</option>
+      <option value="Recent_News">Recent News</option>
+      <option value="Notice_Board">Notice Board</option>
+      <option value="Placement">Placement</option>
+    </select>
+  </label>
+</div>
+<div id="year">
+    <label>&nbsp;Year
+      <select name="Year" id="Year">
+        <option value="1">1st year</option>
+        <option value="2">2nd year</option>
+        <option value="3">3rd year</option>
+        <option value="4">4th year</option>
+        <option value="5">Others category</option>
+      </select>
+    </label>
+</div>
+<div id="apDiv2">
+    <label>Content:
+      <textarea name="Content" id="Content" cols="100" rows="20">put ur post here</textarea>
+    </label>
+</div>
+<div id="apDiv6">
+  <label>&nbsp;Form
+    <input name="user" type="text" id="user" value="Post by (ur name commonly)" size="30" />
+  </label>
+
+</div>
+<div id="apDiv4">
+  
+    <label>&nbsp;Title:
+      <input name="Title" type="text" id="Title" value="Title of ur post" />
+    </label>
+  
+</div>
+<div id="apDiv3">
+    <input type="submit" name="Submit" id="Submit" value="Submit" />
+  </form>
+</div>
+<div id="apDiv1">Upload a file:</div>
+
+
+<script src="../scripts/jquery-1.8.3.min.js"></script>
+<script src="../scripts/jquery-ui-1.8.23.custom.min.js"></script>
+<script src="../scripts/script.js"></script>
+<script src="../scripts/jquery.mousewheel.min.js"></script>
+<script src="../scripts/jquery.mCustomScrollbar.js"></script>
+<div id="logo"><a href="./../index.php"><img src="../images/logo.png" width="470" height="50" alt="logo student corner" /></a></div>
+
+<div id="upload">
+  <form enctype="multipart/form-data" action="./doneupload.php" method="post">
+
+    <label for="fcat">Category</label>
+    <select name="fcat" id="fcat">
+      <option value="CSE &amp; IT">CSE &amp; IT</option>
+      <option value="ECE &amp; EE">ECE &amp; EE</option>
+      <option value="CIV">CIV</option>
+      <option value="CHE">CHE</option>
+      <option value="BT">BT</option>
+      <option value="MME">MME</option>
+      <option value="ME">ME</option>
+      <option value="NOTES">NOTES</option>
+      <option value="Others">OTHER</option>
+      <option value="Q_bank">Q_Bank</option>
+    </select>
+    <br />
+     File upload <input type="file" name="file1"><br> 	
+ <input type="submit" value="Upload It"> 
+  </form>
+    <br />
+  </form>
+</div>
+<script type="text/javascript">
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>

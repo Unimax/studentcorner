@@ -1,0 +1,128 @@
+@charset "utf-8";
+@font-face {
+	font-family: 'sks1';
+	src: url('sks1/BlackOpsOne-Regular.ttf') format('truetype');
+}
+body {
+	background-image: url(../images/baground.jpg);
+	background-color: #099;
+	background-attachment: fixed;
+	background-size: cover;
+}
+#logo2 {
+	position: absolute;
+	left: 222px;
+	top: 384px;
+	width: 470px;
+	height: 50px;
+	z-index: 2;
+}
+body,td,th {
+	color: #0F3;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 36px;
+}
+#admin {
+	position: absolute;
+	left: 367px;
+	top: 0%;
+	width: 200px;
+	height: 250px;
+	z-index: 3;
+}
+#admin2 {
+	position: absolute;
+	left: 950px;
+	top: 0px;
+	width: 200px;
+	height: 250px;
+	z-index: 3;
+}
+#Create {
+	position: absolute;
+	left: 153px;
+	top: 124px;
+	width: 356px;
+	height: 43px;
+	z-index: 4;
+	font-family: "sks1";
+	font-size: 36px;
+	background-color: rgba(154,158,78,1);
+	border-radius: 15px;
+	text-decoration: underline;
+}
+#scat {
+	position: absolute;
+	left: 104px;
+	top: 274px;
+	width: 254px;
+	height: 27px;
+	z-index: 5;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 24px;
+	background-color: #336699;
+	border-top-right-radius: 10px;
+}
+#cat {
+	position: absolute;
+	left: 104px;
+	top: 300px;
+	width: 254px;
+	height: 25px;
+	z-index: 9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	background-color: rgba(37,124,167,1);
+	border-bottom-style: groove;
+	border-bottom-left-radius: 10px;
+}
+#year {
+	position: absolute;
+	left: 367px;
+	top: 300px;
+	width: 188px;
+	height: 25px;
+	z-index: 10;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	background-color: rgba(37,124,167,1);
+	border-bottom-style: groove;
+	border-bottom-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#done {
+	position: absolute;
+	left: 228px;
+	top: 289px;
+	width: 451px;
+	height: 43px;
+	z-index: 4;
+	font-family: "sks1";
+	font-size: 36px;
+	background-color: rgba(154,158,78,1);
+	border-radius: 15px;
+	text-decoration: underline;
+}
+#message {
+	position: absolute;
+	left: 249px;
+	top: 355px;
+	width: 412px;
+	height: 22px;
+	z-index: 5;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	background-color: #336699;
+}
+#upload {
+	position: absolute;
+	left: 107px;
+	top: 720px;
+	width: 406px;
+	height: 62px;
+	z-index: 8;
+	background-color: rgba(38,128,217,1);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}

@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>SignUp</title>
+<link rel="stylesheet" type="text/css" href="css/css2.css" />
+<style type="text/css">
+
+body{
+	background-image:url(images/baground.jpg);
+}
+</style>
+
+</head>
+<body>
+<div id="logo"><a href="index.php"><img src="images/logo.png" width="430" height="50" alt="logo student corner" /></a></div>
+
+
+<form class="form-5" method="post" action="include/dologinadmin.php">
+    <h1 class="sig"> SignUp</h1>
+    <p>
+        <label for="SignUp">Username</label>
+        <input type="text" name="username" placeholder="Sunil123" required>
+    </p>
+    <p>
+        <label for="password">Password</label>
+        <input type="password" name='password' placeholder="password" required> 
+    </p>
+	<p>
+        <label for="SignUp">Full Name</label>
+        <input type="text" name="fname" placeholder="eg:Sunil kumar" required>
+    </p>
+	
+	
+   
+	<p>
+        <label for="SignUp">Email id</label>
+        <input type="text" name="email" placeholder="" required>
+    </p>
+	<p>
+       <label>Department
+                                    <select name="Department" id="Department">
+                              		   	    <option value="CHE">CHE</option>
+      									    <option value="MME">MME</option>
+    									    <option value="CSE">CSE</option>
+     									    <option value="ME">ME</option>
+   									        <option value="IT">IT</option>
+      									    <option value="ECE">ECE</option>
+      									    <option value="EE">EE</option>
+     								        <option value="CIV">CIV</option>
+    									    <option value="BT">BT</option>
+                              </select></label>
+    </p>
+    <p>
+        <input name="register" type="submit" value="Register"/>
+    </p>       
+</form>
+</body>
+</html>
